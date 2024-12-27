@@ -1,0 +1,12 @@
+<h1>Pokédex</h1>
+<div>
+  <input #pokemonName type="text" placeholder="Enter Pokemon Name" />
+  <button (click)=getPokemon(pokemonName.value)>Procurar</button>
+</div>
+
+<div class="pokemon-card" *ngIf="pokemon">
+  <h2>{{ pokemon.name }}</h2>
+  <img [src]="pokemon.sprites.front_default" alt="{{pokemon.name}}" />
+  <p>Height: {{pokemon.height}}</p>
+  <p>Weight: {{pokemon.weight}}</p>
+</div>
