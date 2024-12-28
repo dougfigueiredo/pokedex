@@ -1,58 +1,57 @@
-# Pokedex
+Pokédex Angular
+Este projeto é uma Pokédex desenvolvida com Angular 19, que consome a API PokéAPI para exibir informações dos primeiros 151 Pokémon. A aplicação permite buscar e listar Pokémon, mostrando seus nomes, imagens, alturas e pesos.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Funcionalidades
+Busca individual de Pokémon por nome.
 
-## Development server
+Listagem dos primeiros 151 Pokémon com nome e imagem.
 
-To start a local development server, run:
+Interface de usuário estilizada para uma visualização agradável.
 
-```bash
+Tecnologias Utilizadas
+Angular 19: Framework utilizado para construir a aplicação.
+
+TypeScript: Linguagem de programação utilizada para desenvolver o projeto.
+
+SCSS: Estilos usados para formatar a aparência da aplicação.
+
+PokéAPI: API pública usada para obter dados dos Pokémon.
+
+Como Executar o Projeto
+Clonar o Repositório
+
+```shell
+git clone https://github.com/dougfigueiredo/pokedex-angular.git
+cd pokedex-angular
+```
+Instalar Dependências
+
+```shell
+npm install
+```
+Executar a Aplicação
+
+```shell
 ng serve
 ```
+Acessar no Navegador
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abra o navegador e acesse ```http://localhost:4200.```
 
-## Code scaffolding
+Estrutura do Projeto
+src/app/pokemon.service.ts: Serviço responsável por fazer requisições à PokéAPI.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/app/pokemon/pokemon.component.ts: Componente que gerencia a exibição dos Pokémon.
 
-```bash
-ng generate component component-name
-```
+src/app/pokemon/pokemon.component.html: Template HTML para exibir os dados dos Pokémon.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+src/app/pokemon/pokemon.component.scss: Estilos SCSS para estilizar o componente.
 
-```bash
-ng generate --help
-```
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorias e correções.
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Licença
+Este projeto é licenciado sob a Licença MIT.
 
 ## Additional Resources
 
