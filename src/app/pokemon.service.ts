@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Pokemon } from './models/pokemon.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,11 @@ export class PokemonService {
   }
 
   getFirst151Pokemons(): Observable<any> {
-    return this.http.get(`${this.apiUrl}?limit=151`);
+    return this.http.get(`${this.apiUrl}?limit=15`);
+  }
+
+  getPokemonDetails(url: string): Observable<Pokemon> {
+    return this.http.get<Pokemon>(url);
   }
 }
+
