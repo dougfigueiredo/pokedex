@@ -7,7 +7,7 @@ import { GridPokemonComponent } from './grid-pokemon/grid-pokemon.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, GridPokemonComponent],
+  imports: [RouterOutlet, GridPokemonComponent, PokemonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

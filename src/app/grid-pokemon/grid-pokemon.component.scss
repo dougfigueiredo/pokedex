@@ -1,1 +1,30 @@
+.pokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.pokemons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.pokemons:hover {
+  background-color: rgb(214, 213, 213);
+  box-shadow: 2px 5px 5px rgba(36, 36, 36, 0.734);
+  cursor: pointer;
+}
+
+.pokemons img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.pokemons p {
+  margin: 0;
+}

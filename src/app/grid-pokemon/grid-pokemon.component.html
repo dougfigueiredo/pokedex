@@ -1,1 +1,5 @@
-<p>grid-pokemon works!</p>
+<div class="pokemonContainer">
+  <div *ngFor="let pokemon of pokemonList" class="pokemons">
+    <img [src]="pokemon.sprites.front_default" alt="{{pokemon.name}}">
+    <p>{{pokemon.name}}</p>
+  </div>
